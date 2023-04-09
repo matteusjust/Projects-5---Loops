@@ -1,0 +1,25 @@
+/* A loops that reads a bunch of intergers and prints the biggest number*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    float input, bigger;
+    
+    bigger = 0;
+    
+    
+    while (input > 0) {
+        printf ("Enter a number: ");
+        scanf ("%f", &input);
+        
+        if (input > bigger){
+            bigger = input;
+        }
+        
+    }
+    
+    printf ("The biggest number is: %.2f", bigger);
+    
+    return 0;
+}
