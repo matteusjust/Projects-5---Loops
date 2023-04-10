@@ -1,0 +1,24 @@
+/* reduces a fraction to the lowest terms possible */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int m, n, remain, m2, n2;
+    
+    printf ("Insert two numbers: ");
+    scanf ("%d/%d", &m, &n);
+    
+    m2 = m;
+    n2 = n;
+    
+    while (n2 != 0){
+        remain = m2 % n2;
+        m2 = n2;
+        n2 = remain;
+     
+    }
+    printf ("The fraction is lowest terms is : %d/%d", m / m2, n / m2);
+    
+    return 0;
+}
