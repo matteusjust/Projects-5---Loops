@@ -1,0 +1,23 @@
+/* Inverts a integer of any size*/
+
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n; 
+    
+    printf ("Insert a number to be inverted: ");
+    scanf ("%d", &n);
+    
+    
+    printf ("Digits reversed: ");
+    
+    do {
+        printf ("%d", n % 10);
+        n /= 10;
+        
+    } while (n != 0);
+    
+    return 0;
+}
