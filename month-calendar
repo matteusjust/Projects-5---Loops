@@ -1,0 +1,32 @@
+/* Prints a one month calendar */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int i, n, day;
+    
+    printf ("This program creates a one month calendar.\n");
+    printf ("Enter the number of days of the month: ");
+    scanf ("%d", &n);
+    
+    printf ("Enter starting day of the week: ");
+    scanf ("%d", &day);
+    
+    for (i = 1; i < day; i++){
+        printf ("     ");
+    }
+    
+    for (i = 1; i <= n; i++){
+       printf ("%3d", i);
+       
+       if ((day + i - 1) % 7 == 0){
+           printf ("\n");
+       }
+      
+    }
+  
+    
+    return 0;
+
+}
